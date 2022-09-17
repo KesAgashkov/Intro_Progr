@@ -1,4 +1,4 @@
-﻿System.Console.WriteLine("Введите любое целое число от 1 до 100");
+﻿System.Console.WriteLine("Введите любое целое число от -100 до 100");
 int num = int.Parse (Console.ReadLine());
 
 if ( num % 2 == 0 )
