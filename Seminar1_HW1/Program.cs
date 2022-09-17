@@ -4,6 +4,10 @@ if (a > b)
 {
     System.Console.WriteLine("max a = " + a + "; min b = " + b);
 }
+else if ( a == b)
+{
+    System.Console.WriteLine("a = b");
+}
 else
 {
     System.Console.WriteLine("max b = " + b + "; min a = " + a);
