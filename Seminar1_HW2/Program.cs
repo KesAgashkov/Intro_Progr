@@ -2,7 +2,7 @@
 int b = new Random().Next(1, 101);
 int c = new Random().Next(1, 101);
 
-if ((a > c) || (a > b))
+if ((a > c) && (a > b))
 {
     Console.WriteLine("max number a = " + a + " last numbers : " + b + "; " + c);
 }
