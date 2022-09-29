@@ -18,15 +18,20 @@
 
 // 6, 1, 33 -> [6, 1, 33]
 
-// Задача 25
+// Задача 25 считаем без MathPow
 
 void PowAtoB (){
     System.Console.WriteLine("Введите целое положительное число");
     int a = int.Parse (Console.ReadLine());
-    System.Console.WriteLine("Введите целое число)");
+    System.Console.WriteLine("Введите целое число");
+    int res = 0;
     int b = int.Parse (Console.ReadLine());
-    System.Console.WriteLine(a + " в степени " + b + " = " + Math.Pow(a,b));
+    for (int i = 2; i <= b; i++){
+        res = res + a * a;
+    }
+    System.Console.WriteLine(a + " в степени " + b + " = " + res);
 }
+PowAtoB ();
 // Не очень понятно, для чего в этой задаче указано. что необходимо делать через цикл. Ввели два значения, посчитали результат.
 // В примере к задаче уточнений не видел. Может нужно перебрать все значения а включая введенное а. и все значения b включая введенное b.
 // Если не так сделал, прокомментируйте пож, я переделаю
@@ -49,7 +54,7 @@ void SummNum (){
     }
     System.Console.WriteLine("Cумма всех цифр в числе = " + last);
 }
-SummNum ();
+
 
 // Задача 29
 
