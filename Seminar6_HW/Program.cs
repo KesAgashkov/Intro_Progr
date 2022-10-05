@@ -40,7 +40,7 @@ System.Console.WriteLine($"Пользователь ввёл {count} полож�
 // DiffMaxMin (5);
 
 // Задача 43
-float IntersectionPoints()
+void IntersectionPoints()
 {
 System.Console.WriteLine("Задайте последовательно через enter переменные k1,b1,k2,b2. Используйте целые числа");
 int k1 = int.Parse (Console.ReadLine());
@@ -61,7 +61,5 @@ if (k1 != k2){
 } else if (k1==k2){
     System.Console.WriteLine("Две прямые параллельны");
 }
-return x;
-return y;
 }
 IntersectionPoints();
