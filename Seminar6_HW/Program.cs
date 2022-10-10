@@ -68,4 +68,4 @@ if (k1 != k2)
     System.Console.WriteLine("Две прямые параллельны");
 }
 }
-IntersectionPoints();
+
