@@ -89,17 +89,17 @@ void CreateDisplayArray (int row, int column)
             System.Console.WriteLine(); 
     }
     int resColumn = 0;
-    int average = 0;
+    float average = 0f;
     for (int k = 0; k < row; k++)
     {
         for (int n = 0; n < row; n++)
         {
              resColumn += array[n,k];
         }
-    average = resColumn/row;
-    System.Console.WriteLine($"Среднее арифметическое столбца {k + 1} : {average}");
+    average = (float)resColumn/row;
+    System.Console.WriteLine($"Среднее арифметическое столбца {k + 1} : {Math.Round(average,2)}");
     resColumn = 0;
     average = 0;
     }
 }
-CreateDisplayArray (7,7);
+CreateDisplayArray (5,5);
