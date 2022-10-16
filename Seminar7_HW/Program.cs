@@ -102,4 +102,5 @@ void CreateDisplayArray (int row, int column)
     average = 0;
     }
 }
-CreateDisplayArray (5,5);
+// CreateDisplayArray (5,6);
+
